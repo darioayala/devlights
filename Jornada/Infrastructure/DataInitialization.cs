@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentValidation.Results;
+using WorkDay.Validations;
 
 namespace WorkDay.Infrastructure
 {
@@ -46,18 +48,22 @@ namespace WorkDay.Infrastructure
 
                 new Assignment(3, employees.FirstOrDefault(x => x.Id == 2), getTask(building,3), new TimeOnly(10, 0), new TimeOnly(11, 0)),
                 new Assignment(4, employees.FirstOrDefault(x => x.Id == 3), getTask(building,3), new TimeOnly(17, 15), new TimeOnly(17, 30)),
-                new Assignment(4, employees.FirstOrDefault(x => x.Id == 4), getTask(building,2), new TimeOnly(10, 0), new TimeOnly(12, 0)),
-                new Assignment(3, employees.FirstOrDefault(x => x.Id == 2), getTask(building,5), new TimeOnly(15, 0), new TimeOnly(16, 30)),
-                new Assignment(3, employees.FirstOrDefault(x => x.Id == 1), getTask(building,6), new TimeOnly(17, 0), new TimeOnly(18, 0)),
-                new Assignment(1, employees.FirstOrDefault(x => x.Id == 3), getTask(building,1), new TimeOnly(11, 0), new TimeOnly(12, 15)),
-                new Assignment(2, employees.FirstOrDefault(x => x.Id == 3), getTask(building,2), new TimeOnly(8, 0), new TimeOnly(11, 0)),
-                new Assignment(1, employees.FirstOrDefault(x => x.Id == 5), getTask(building,3), new TimeOnly(14, 30), new TimeOnly(15, 30))
+                new Assignment(5, employees.FirstOrDefault(x => x.Id == 4), getTask(building,2), new TimeOnly(10, 0), new TimeOnly(12, 0)),
+                new Assignment(6, employees.FirstOrDefault(x => x.Id == 2), getTask(building,5), new TimeOnly(15, 0), new TimeOnly(16, 30)),
+                new Assignment(7, employees.FirstOrDefault(x => x.Id == 1), getTask(building,6), new TimeOnly(17, 0), new TimeOnly(18, 0)),
+                new Assignment(8, employees.FirstOrDefault(x => x.Id == 3), getTask(building,1), new TimeOnly(11, 0), new TimeOnly(12, 15)),
+                new Assignment(9, employees.FirstOrDefault(x => x.Id == 3), getTask(building,2), new TimeOnly(8, 0), new TimeOnly(11, 0)),
+                new Assignment(10, employees.FirstOrDefault(x => x.Id == 4), getTask(building,3), new TimeOnly(14, 30), new TimeOnly(15, 30))
             };
 
+
+            if (!DomainValidation.Validate(building)) return null;
 
             return building;
         
         }
+
+        
 
         private static Domain.Task getTask(Building building, int id)
         { 

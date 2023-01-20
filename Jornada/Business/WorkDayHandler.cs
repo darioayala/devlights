@@ -18,15 +18,19 @@ namespace WorkDay.Business
             while(currentTime <= building.WorkingDayEnd)
             {
                 // check for stating tasks
-                var assign = building.Assignments.Where(x => x.StartHour == currentTime).ToList();
+                var assignStart = building.Assignments.Where(x => x.StartHour == currentTime).ToList();
 
-                if(assign.Any())
+                if(assignStart.Any())
                 {
-                    assign.ForEach(x => Console.WriteLine(x.ToString()));
+                    assignStart.ForEach(x => Console.WriteLine(string.Format("{0} - Task started - Floor: {1} - {2}", currentTime.ToString(), building.GetTaksFloor(x.Task),  x.ToString())));
                 }
 
                 // check for ending tasks
-
+                var assignEnd = building.Assignments.Where(x => x.FinishHour== currentTime).ToList();
+                if(assignEnd.Any())
+                {
+                    assignEnd.ForEach(x => Console.WriteLine(string.Format("{0} - Task ended - Floor: {1} - {2}", currentTime.ToString(), building.GetTaksFloor(x.Task), x.ToString())));
+                }
 
                 currentTime = currentTime.AddMinutes(1);
             }
