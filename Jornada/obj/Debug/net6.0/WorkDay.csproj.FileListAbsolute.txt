@@ -1,0 +1,17 @@
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\WorkDay.exe
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\WorkDay.deps.json
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\WorkDay.runtimeconfig.json
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\WorkDay.dll
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\WorkDay.pdb
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.csproj.AssemblyReference.cache
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.AssemblyInfoInputs.cache
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.AssemblyInfo.cs
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.csproj.CoreCompileInputs.cache
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.dll
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\refint\WorkDay.dll
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.pdb
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.genruntimeconfig.cache
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\ref\WorkDay.dll
+C:\Users\AR00062500\code\otros\Jornada\Jornada\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\AR00062500\code\otros\Jornada\Jornada\obj\Debug\net6.0\WorkDay.csproj.CopyComplete
